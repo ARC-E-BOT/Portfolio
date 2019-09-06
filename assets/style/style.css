@@ -25,7 +25,7 @@ body {
   width: 50px;
   height: 50px;
   font-size: 0px;
-  position: absolute;
+  position: fixed;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example;
@@ -43,7 +43,7 @@ body {
   width: 50px;
   height: 50px;
   font-size: 0px;
-  position: absolute;
+  position: fixed;
   animation-name: footerEX;
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -91,6 +91,7 @@ body {
   float: left;
   margin: auto;
   margin-top: 90px;
+  margin-bottom: 90px;
   width: 920px;
   background: gray;
   padding: 20px;
