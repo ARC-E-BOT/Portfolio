@@ -10,7 +10,7 @@ body {
   background-color: blue;
   text-align: center;
   margin: auto;
-  animation: test 4s both;
+  animation: centerAgent 4s both;
 }
 
 #logo {
@@ -26,8 +26,10 @@ body {
   height: 50px;
   font-size: 0px;
   position: fixed;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 4s;
   animation-fill-mode: both;
@@ -68,7 +70,6 @@ body {
 
 #navButtons li {
   float: right;
-  margin-right: 8px;
 }
 
 .subFooter {
@@ -105,6 +106,7 @@ body {
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
 }
+
 .main-body p {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -121,174 +123,28 @@ body {
   max-width: 200px;
 }
 
-/* Standard syntax */
-@keyframes example {
-  0% {
-    background-color: red;
-    left: 45%;
-    top: -100px;
-  }
-  25% {
-    background-color: rebeccapurple;
-    left: 45%;
-    top: 50%;
-    transform: rotate(360deg);
-  }
-  /* 50%  {background-color:blue; left:200px; top:200px;} */
-  75% {
-    background-color: rebeccapurple;
-    left: 50%;
-    top: 0px;
-    width: 100px;
-    -webkit-box-shadow: 0 0 0 0 rgb(68, 68, 68);
-    -moz-box-shadow: 0 0 0 0 rgb(68, 68, 68);
-    box-shadow: 0 0 0 0 rgb(68, 68, 68);
-    transform: rotate(0deg);
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    -webkit-box-shadow: 0 6px 4px -4px rgb(68, 68, 68);
-    -moz-box-shadow: 0 6px 4px -4px rgb(68, 68, 68);
-    box-shadow: 0 6px 4px -4px rgb(68, 68, 68);
-    font-size: 18px;
-  }
-  to {
-    width: 100%;
-    height: 70px;
-  }
+#aboutMe {
+  padding-right: 8px;
+  animation: borderMenu 4s both;
 }
 
-@keyframes test {
-  0% {
-    background-color: red;
-    left: 45%;
-    top: -100px;
-  }
-  25% {
-    background-color: rebeccapurple;
-    left: 45%;
-    top: 300px;
-  }
-  /* 50%  {background-color:blue; left:200px; top:200px;} */
-  75% {
-    background-color: rebeccapurple;
-    left: 0px;
-    top: 0px;
-    width: 100px;
-  }
-  100% {
-    background-color: royalblue;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    font-size: 18px;
-  }
-  to {
-    width: 960px;
-    height: 70px;
-  }
+#portfolio {
+  padding-right: 8px;
+  animation: borderMenu 4s both;
 }
 
-@keyframes logo {
-  75% {
-    font-size: 0px;
-    padding: 0;
-  }
-  100% {
-    font-size: 50px;
-    height: 50px;
-    padding: 10px;
-    background: indigo;
-    color: white;
-  }
+.button {
+  padding: 10px;
 }
 
-@keyframes footerEX {
-  0% {
-    background-color: red;
-    left: 55%;
-    bottom: -100px;
-  }
-  25% {
-    background-color: rebeccapurple;
-    left: 55%;
-    bottom: 50%;
-    transform: rotate(360deg);
-  }
-  /* 50%  {background-color:blue; left:200px; top:200px;} */
-  75% {
-    background-color: rebeccapurple;
-    left: 50%;
-    bottom: 0%;
-    width: 100px;
-    transform: rotate(0deg);
-  }
-  100% {
-    background-color: red;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    font-size: 18px;
-  }
-  to {
-    width: 100%;
-    height: 70px;
-  }
+.button:hover {
+  background: lightblue;
+  transform: translateY(2px);
+  filter: saturate(150%);
 }
 
-@keyframes copyright {
-  75% {
-    font-size: 0px;
-    padding: 0;
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    font-size: 18px;
-    height: 20px;
-    width: 150px;
-    padding: 1px;
-    margin-top: 25px;
-    background: indigo;
-    color: white;
-  }
-}
-
-@keyframes navButtons {
-  75% {
-    font-size: 0px;
-    padding: 0;
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    font-size: 18px;
-    height: 20px;
-    width: 250px;
-    padding: 1px;
-    margin-top: 25px;
-    background: indigo;
-    color: white;
-  }
-}
-
-@keyframes footerSub {
-  75% {
-    font-size: 0px;
-    padding: 0;
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    font-size: 18px;
-    height: 60px;
-    width: 100%;
-    padding: 1px;
-    bottom: 0;
-    background: black;
-    color: white;
-  }
+.button:active {
+  background: darkblue;
+  transform: translateY(5px);
+  filter: saturate(150%);
 }
