@@ -1,150 +1,189 @@
 body {
-  background: green;
-  height: 100%;
+    background: green;
+    height: 100%;
 }
 
 .centerAgent {
-  width: 0;
-  height: 0;
-  font-size: 0px;
-  background-color: blue;
-  text-align: center;
-  margin: auto;
-  animation: centerAgent 4s both;
+    width: 0;
+    height: 0;
+    font-size: 0px;
+    background-color: blue;
+    text-align: center;
+    margin: auto;
+    animation: centerAgent 4s both;
 }
 
 #logo {
-  float: left;
-  font-size: 0px;
-  animation-delay: 3s;
-  animation: logo 4s both;
+    float: left;
+    font-size: 0px;
+    animation-delay: 3s;
+    animation: logo 4s both;
 }
 
 .navBar {
-  background: rebeccapurple;
-  width: 50px;
-  height: 50px;
-  font-size: 0px;
-  position: fixed;
-  -webkit-animation-name: example;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
-  animation-fill-mode: both;
+    background: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    position: fixed;
+    -webkit-animation-name: nav-Bar;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: nav-Bar;
+    animation-duration: 4s;
+    animation-fill-mode: both;
 }
 
 .shadow {
-  -webkit-box-shadow: 0 6px 4px -4px black;
-  -moz-box-shadow: 0 6px 4px -4px black;
-  box-shadow: 0 6px 4px -4px black;
+    -webkit-box-shadow: 0 6px 4px -4px black;
+    -moz-box-shadow: 0 6px 4px -4px black;
+    box-shadow: 0 6px 4px -4px black;
 }
 
 .footer {
-  width: 50px;
-  height: 50px;
-  font-size: 0px;
-  position: fixed;
-  animation-name: footerEX;
-  animation-duration: 4s;
-  animation-fill-mode: both;
-  text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    position: fixed;
+    animation-name: footerEX;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    text-align: center;
 }
 
 #copyRight {
-  font-size: 0px;
-  animation-delay: 3s;
-  animation: copyright 4s both;
-  margin: auto;
+    font-size: 0px;
+    animation-delay: 3s;
+    animation: copyright 4s both;
+    margin: auto;
 }
 
 #navButtons {
-  float: right;
-  width: 0;
-  height: 0;
-  font-size: 0px;
-  animation-delay: 3s;
-  animation: navButtons 4s both;
+    float: right;
+    width: 0;
+    height: 0;
+    font-size: 0px;
+    animation-delay: 3s;
+    animation: navButtons 4s both;
 }
 
 #navButtons li {
-  float: right;
+    float: right;
 }
 
 .subFooter {
-  width: 0;
-  height: 0;
-  font-size: 0px;
-  position: fixed;
-  animation-delay: 3s;
-  animation: footerSub 4s both;
+    width: 0;
+    height: 0;
+    font-size: 0px;
+    position: fixed;
+    animation-delay: 3s;
+    animation: footerSub 4s both;
 }
 
 .main-Container {
-  max-width: 960px;
-  width: 100%;
-  margin: auto;
-  clear: both;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    clear: both;
 }
 
 .main-body {
-  float: left;
-  margin: auto;
-  margin-top: 90px;
-  margin-bottom: 90px;
-  width: 920px;
-  background: gray;
-  padding: 20px;
+    position: absolute;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    padding: 20px;
+    animation: main-Container 4s both;
 }
 
 .main-body h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 49px;
-  border-bottom: 3px solid #dddddd;
+    font-size: 0px;
+    animation: main-text 4s both;
 }
 
 .main-body p {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 49px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0px;
+    font-weight: bold;
+    line-height: 49px;
+    animation: main-body-text 4s both;
 }
 
 #profilePic {
-  float: left;
-  padding-top: 20px;
-  margin-right: 25px;
-  max-height: 200px;
-  max-width: 200px;
+    float: left;
+    padding-top: 20px;
+    margin-right: 25px;
+    max-height: 0px;
+    max-width: 0px;
+    animation-delay: 4s;
+    animation: main-body-image 4s both;
 }
 
 #aboutMe {
-  padding-right: 8px;
-  animation: borderMenu 4s both;
+    padding-right: 8px;
+    animation: borderMenu 4s both;
 }
 
 #portfolio {
-  padding-right: 8px;
-  animation: borderMenu 4s both;
+    padding-right: 8px;
+    animation: borderMenu 4s both;
 }
 
 .button {
-  padding: 10px;
+    padding: 10px;
 }
 
 .button:hover {
-  background: lightblue;
-  transform: translateY(2px);
-  filter: saturate(150%);
+    color: black;
+    background: lightblue;
+    transform: translateY(2px);
+    filter: saturate(150%);
 }
 
 .button:active {
-  background: darkblue;
-  transform: translateY(5px);
-  filter: saturate(150%);
+    background: darkblue;
+    transform: translateY(5px);
+    filter: saturate(150%);
+}
+
+
+.main-body-out {
+    position: absolute;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    padding: 20px;
+    animation: main-Container-out 4s both;
+}
+
+.main-body-out h1 {
+    font-size: 0px;
+    animation: main-text-out 4s both;
+}
+
+.main-body-out p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0px;
+    font-weight: bold;
+    line-height: 49px;
+    animation: main-body-text-out 4s both;
+}
+
+.main-body-out img {
+    float: left;
+    padding-top: 20px;
+    margin-right: 25px;
+    height: 0px;
+    width: 0px;
+    animation-delay: 4s;
+    animation: main-body-image-out 4s both;
 }

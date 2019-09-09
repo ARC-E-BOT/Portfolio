@@ -1,5 +1,5 @@
 /* Standard syntax */
-@keyframes example {
+@keyframes nav-Bar {
     0% {
         background-color: red;
         left: 45%;
@@ -189,7 +189,197 @@
     75% {
         border-right: 0px solid #dddddd;
     }
+
     100% {
         border-right: 3px solid #dddddd;
+    }
+}
+
+@keyframes main-Container {
+    0% {
+        background-color: red;
+        right: -100px;
+        top: 30%;
+    }
+
+    25% {
+        background-color: rebeccapurple;
+        right: 60%;
+        top: 30%;
+        transform: rotate(660deg);
+    }
+
+    /* 50%  {background-color:blue; left:200px; top:200px;} */
+    75% {
+        position: absolute;
+        background-color: rebeccapurple;
+        right: 50%;
+        top: 0%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        position: static;
+        float: left;
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        width: 920px;
+        height: 100%;
+        background: gray;
+        padding: 20px;
+        box-shadow: 6px 6px 4px -4px rgb(68, 68, 68);
+    }
+}
+
+@keyframes main-text {
+    75% {
+        font-size: 0px;
+        border-bottom: 0px solid #dddddd;
+    }
+
+    100% {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 49px;
+        border-bottom: 3px solid #dddddd;
+    }
+}
+
+@keyframes main-body-text {
+    75% {
+        font-size: 0px;
+    }
+
+    100% {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 49px;
+    }
+}
+
+@keyframes main-body-image {
+    25% {
+        height: 0px;
+        width: 0px;
+    }
+
+    50% {
+        height: 0px;
+        width: 0px;
+    }
+
+    75% {
+        height: 0px;
+        width: 0px;
+    }
+
+    100% {
+        float: left;
+        padding-top: 20px;
+        margin-right: 25px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+
+
+@keyframes main-Container-out {
+    0% {
+        position: absolute;
+        float: left;
+        margin: auto;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        width: 920px;
+        height: 100%;
+        left: 20%;
+        top: 0;
+        background: gray;
+        padding: 20px;
+        box-shadow: 6px 6px 4px -4px rgb(68, 68, 68);
+    }
+
+    25% {
+        position: absolute;
+        background-color: rebeccapurple;
+        left: 50%;
+        top: 30%;
+        width: 50px;
+        height: 50px;
+        transform: rotate(660deg);
+    }
+
+    /* 50%  {background-color:blue; left:200px; top:200px;} */
+    75% {
+        background-color: rebeccapurple;
+        left: 50%;
+        top: 30%;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        background-color: rebeccapurple;
+        left: -100px;
+        top: 30%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes main-text-out {
+    0% {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 49px;
+        border-bottom: 3px solid #dddddd;
+    }
+
+    25% {
+        font-size: 0px;
+        border-bottom: 0px solid #dddddd;
+    }
+}
+
+
+@keyframes main-body-text-out {
+    0% {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 49px;
+    }
+
+    10% {
+        font-size: 0px;
+    }
+}
+
+@keyframes main-body-image-out {
+    0% {
+        float: left;
+        padding-top: 20px;
+        margin-right: 25px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    25% {
+        height: 0px;
+        width: 0px;
+    }
+
+    100% {
+        height: 0px;
+        width: 0px;
     }
 }
